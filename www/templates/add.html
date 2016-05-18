@@ -1,4 +1,8 @@
 <ion-view view-title="add">
+    <ion-header-bar class="bar-assertive">
+        <h1 class="title">Ajouter</h1>
+    </ion-header-bar>
+
     <ion-content>
 
 
@@ -8,7 +12,7 @@
 
 
 
-                <h1>Game of thrones</h1> <!-- A remplacer par {{ name }} plus tard-->
+                <h1>NOM SUJET</h1> <!-- A remplacer par {{ name }} plus tard-->
 
 
                 <label class="item item-input">
@@ -16,7 +20,7 @@
                     <input class="big" type="text" placeholder="Ecrivez votre spoil...">
                 </label>
 
-                <button class="button button-full button-positive">
+                <button class="button button-full button-assertives">
                     Envoyez
                 </button>
 
@@ -28,4 +32,24 @@
 
 
     </ion-content>
+
+    <div class="tabs assertive">
+        <a class="tab-item" ui-sref="film">
+            Films
+        </a>
+        <a class="tab-item" ui-sref="serie">
+            Séries
+        </a>
+        <a class="tab-item" ui-sref="liste">
+            <i class="icon ion-home"></i>
+        </a>
+        <a class="tab-item" ui-sref="livre">
+            Livres
+        </a>
+        <a class="tab-item" ui-sref="jeux">
+            Jeux
+        </a>
+    </div>
+
+
 </ion-view>

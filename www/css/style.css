@@ -79,3 +79,8 @@ h1{
     text-transform: uppercase;
     border-radius: 15px !important;
 }
+
+#titre_liste {
+	text-align: center;
+	font-size: 1.4em;
+}
