@@ -77,6 +77,11 @@ angular.module('starter', ['ionic', ])
     templateUrl: 'templates/livre.html'        
   })
 
+    .state('single', {
+    url: '/single',
+    templateUrl: 'templates/single.html'        
+  })
+
    $urlRouterProvider.otherwise('');
 
 

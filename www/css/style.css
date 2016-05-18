@@ -93,3 +93,43 @@ h1{
 
 .item{
 	border-width: 0px!important;
+}
+
+#pict {
+	width: 100%;
+}
+
+#pict .plus {
+	border-radius: 50px;
+	height: 40px;
+	width: 40px;
+	background-color: red;
+	text-align: center;
+	position: absolute;
+	margin-left: 83%;
+}
+
+#pict .plus h2 {
+	color: white;
+}
+
+#pict img {
+	margin: 0% 20%;
+	width: 60%;
+}
+
+#contenu {
+	padding: 2% 2%;
+}
+
+#contenu .lespoil {
+	margin-top: 2%;
+	padding: 2% 3%;
+	text-align: justify;
+	border-left: 2px solid red;
+}
+
+#contenu .lespoil .rs img {
+	height: 40px;
+	margin-left: 2%; 
+}
