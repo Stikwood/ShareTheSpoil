@@ -7,6 +7,7 @@
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,700italic,900,900italic,400italic,300italic,100italic,100' rel='stylesheet' type='text/css'>
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
@@ -15,6 +16,7 @@
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
+
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
 
@@ -22,13 +24,88 @@
     <script src="js/app.js"></script>
   </head>
   <body ng-app="starter">
+  <ion-pane>
 
-    <ion-pane>
-      <ion-header-bar class="bar-stable">
-        <h1 class="title">Ionic Blank Starter</h1>
+    <ion-nav-view>
+      <div class="acceuil">
+        <img ng-src="img/logo.png" >
+        <h1>ShareTheSpoil</h1>
+        <p>Nous ne sommes en aucun cas responsable de votre propre spoil !!</p>
+        <button class="button button-consentir" ui-sref="liste" >
+          Consentir
+        </button>
+      </div>
+    </ion-nav-view>
+  </ion-pane>
+  </body>
+</html>
+
+ <!-- <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet"> -->
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+   <!-- <script src="lib/ionic/js/ionic.bundle.js"></script> -->
+
+    <!-- cordova script (this will be a 404 during development) -->
+   <!--  <script src="cordova.js"></script> -->
+
+    <!-- your app's js -->
+   <!-- <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+
+    <ion-nav-bar class="bar-assertive">            
+    </ion-nav-bar>
+
+    <ion-nav-view>
+    </ion-nav-view>
+
+     <div class="tabs assertive">
+        <a class="tab-item" ui-sref="film">
+          Films
+        </a>
+        <a class="tab-item" ui-sref="serie">
+          Séries
+        </a>
+
+        <a class="tab-item" ui-sref="liste">
+          <i class="icon ion-home"></i>
+        </a>
+
+        <a class="tab-item" ui-sref="livre">
+          Livres
+        </a>
+        <a class="tab-item" ui-sref="jeux">
+          Jeux
+        </a>
+      </div> 
+    
+  </body>
+</html> -->
+
+<!-- Code écrit par défaut
+      <ion-header-bar class="bar-assertive">
+        <h1 class="title">ShareTheSpoil</h1>
       </ion-header-bar>
 
-      <div class="tabs">
+    <ion-nav-view> 
+    </ion-nav-view> -->
+    
+
+<!--<br>
+<a ui-sref="liste"><p>Liste</p></a>
+
+      <div class="tabs assertive">
         <a class="tab-item">
           Films
         </a>
@@ -41,10 +118,11 @@
         <a class="tab-item">
           Jeux
         </a>
-      </div>
+      </div> 
 
-      <ion-content>
-      </ion-content>
-    </ion-pane>
-  </body>
-</html>
+
+    
+      
+      <a href="templates/liste.html">
+        <p>Liste</p>
+      </a>-->

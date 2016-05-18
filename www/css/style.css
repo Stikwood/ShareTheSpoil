@@ -1,1 +1,81 @@
 /* Empty. Add your own CSS if you like */
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,700italic,900,900italic,400italic,300italic,100italic,100);
+
+
+#top {
+	margin-top: 2%;
+}
+
+#top h4 {
+	color: red;
+	text-align: center;
+	margin-top: -1%;
+}
+
+#logo {
+	margin-left: 39%;
+	height: 80px;
+}
+
+#test {
+	font-family: Arial;
+	color: red;
+}
+
+#afficher {
+	width: 100%;
+	height: 100px;
+}
+
+#afficher hr {
+	width: 90%;
+}
+
+#afficher .colun {
+	width: 38%;
+	float: left;
+	padding: 1px;
+}
+
+#afficher .colun img {
+	width: 70%;
+	margin-left: 18%;
+	height: 
+}
+
+#afficher .coldeux {
+	width: 62%;
+	float: left;
+	padding: 1px;
+}
+
+
+h1{
+    text-align: center;
+    color: #f0312f;
+    font-family: 'Lato:700', sans-serif;
+    font-weight: 700;
+}
+.acceuil{
+    margin-top: 10em;
+    text-align: center;
+}
+
+.acceuil img{
+    width: 40%;
+}
+
+.acceuil p{
+    padding: 0em 3em;
+    color:#18394e;
+    font-family: 'Lato', sans-serif;
+}
+
+.button-consentir{
+    background-color: #18394e;
+    color: #fff;
+    padding: 0em 3em;
+    text-transform: uppercase;
+    border-radius: 15px !important;
+}

@@ -22,3 +22,62 @@ angular.module('starter', ['ionic', ])
     }
   });
 })
+
+.config(function($stateProvider, $urlRouterProvider) {
+
+  // Ionic uses AngularUI Router which uses the concept of states
+  // Learn more here: https://github.com/angular-ui/ui-router
+  // Set up the various states which the app can be in.
+  // Each state's controller can be found in controllers.js
+  $stateProvider
+
+  // setup an abstract state for the tabs directive
+    .state('liste', {
+    url: '/liste',
+    templateUrl: 'templates/liste.html'        
+  })
+
+    .state('home', {
+    url: '/home',
+    templateUrl: 'templates/home.html'        
+  })
+
+    .state('test', {
+    url: '/test',
+    templateUrl: 'templates/test.html'        
+  })
+
+    .state('add', {
+    url: '/add',
+    templateUrl: 'templates/add.html'        
+  })
+
+    .state('concent', {
+    url: '/concent',
+    templateUrl: 'templates/concent.html'        
+  })
+
+    .state('film', {
+    url: '/film',
+    templateUrl: 'templates/film.html'        
+  })
+
+    .state('serie', {
+    url: '/serie',
+    templateUrl: 'templates/serie.html'        
+  })
+
+    .state('jeux', {
+    url: '/jeux',
+    templateUrl: 'templates/jeux.html'        
+  })
+
+    .state('livre', {
+    url: '/livre',
+    templateUrl: 'templates/livre.html'        
+  })
+
+   $urlRouterProvider.otherwise('');
+
+
+});
