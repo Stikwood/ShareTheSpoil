@@ -79,3 +79,12 @@ h1{
     text-transform: uppercase;
     border-radius: 15px !important;
 }
+
+.tabs{
+	background-color: #18394e!important;
+	font-family: 'Lato', sans-serif;
+}
+
+.item{
+	border-width: 0px!important;
+}
