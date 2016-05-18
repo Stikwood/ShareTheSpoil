@@ -80,7 +80,16 @@ h1{
     border-radius: 15px !important;
 }
 
+
 #titre_liste {
 	text-align: center;
 	font-size: 1.4em;
 }
+
+.tabs{
+	background-color: #18394e!important;
+	font-family: 'Lato', sans-serif;
+}
+
+.item{
+	border-width: 0px!important;
