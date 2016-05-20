@@ -3,7 +3,7 @@
         <h1 class="title">Accueil</h1>
     </ion-header-bar>
 
-    <ion-content>
+    <ion-content ng-controller="ListCtrl">
 
     <div id="top">
 
@@ -13,9 +13,9 @@
 
 			<div id="pict">
 
-				<div class="plus" ui-sref="add">
+				<div class="plus">
 
-					<h2>+</h2>
+					<button class="button button-icon ion-plus" ng-click="addItem()"></button>
 
 				</div>
 
@@ -28,72 +28,28 @@
 			  </label>
 			</div>
 
-			
-			
-
 		</div>
 
-		
-
-		<!-- <div class="list">
-
-		    <a class="item item-thumbnail-left" href="#">
-		      <img ng-src="../img/hp7.jpg">
-		      <h2>{{ Titre sujet }}</h2>
-		      <p>{{ Le Spoil }}</p>
-		    </a>
-
-		    ...
-
-		</div> -->
-
-   <!--<p id="test">LISTE</p>
-
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
 
 		<h3 id="titre_liste">COMMUNITY'S SPOILS</h3>
 
-		<div id="afficher" ui-sref="single">
-			<hr>
 
-			<div class="colun">
+			<ion-list>
+				<h1 class="title">Items</h1>
+				<ion-item ng-repeat="item in items" ng-class="{purchased: item.status == 'purchased'}">
+					{{item.name}}
+					<ion-option-button class="button-royal" ng-click="purchaseItem(item)">
+						<i class="icon ion-checkmark"></i>
+					</ion-option-button>
+				</ion-item>
+			</ion-list>
 
-				<img ng-src="img/got.jpg">
 
-			</div>
 
-			<div class="coldeux">
 
-				<h4>#GameOfThrones S06</h4>
 
-				<p>Jon Snow ressucite !!</p>
 
-			</div>
-		</div>
 
-		<div id="afficher" ui-sref="single">
-			<hr>
-
-			<div class="colun">
-
-				<img ng-src="img/xmen.png">
-
-			</div>
-
-			<div class="coldeux">
-
-				<h4>#TWD S06</h4>
-
-				<p>Negan tue quelqu'un !</p>
-
-			</div>
-		</div>
- 
 
     </ion-content>
 
