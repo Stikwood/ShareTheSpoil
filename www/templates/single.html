@@ -41,11 +41,11 @@
 
 				<p>Jon Snow ressucite dans l'épisode 2 de la saison 6</p>
 
-				<div class="rs">
+				<div class="rs" ng-controller="ShareCtrl">
 
-					<img ng-src="img/telegram.png">
-					<img ng-src="img/facebook.png">
-					<img ng-src="img/twitter.png">
+					<button class="button button-assertive icon ion-android-share-alt" onclick="window.plugins.socialsharing.share('Jon snow ressucite dans l\'episode 2 saisons 6')"></button>
+					<button class="button button-positive icon ion-social-facebook" onclick="window.plugins.socialsharing.shareViaFacebook('Message via Facebook', null /* img */, null /* url */, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})"></button>
+
 
 				</div>
 
